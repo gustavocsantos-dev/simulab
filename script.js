@@ -216,72 +216,104 @@ function deletarSimulado(index) {
   }
 }
 
-// ===================== SIMULADO PADRÃO =====================
-const simuladoPadrao = {
-  materia: "Gerenciamento de Projetos",
-  topico: "PMBOK",
-  perguntas: [
-    {
-      enunciado: "Sobre grupos de processos é correto afirmar que:",
-      alternativas: [
-        "Se ligam pelos resultados que produzem.",
-        "Se sobrepõem uns aos outros.",
-        "O encerramento de uma fase é subsídio para outra.",
-        "Todas as anteriores."
-      ],
-      correta: "D"
-    },
-    {
-      enunciado: "A diferença entre programa e projeto é:",
-      alternativas: [
-        "Um programa é feito de múltiplos projetos.",
-        "Programas são projetos de longa duração.",
-        "Os programas são empreendimentos permanentes.",
-        "Todas acima."
-      ],
-      correta: "A"
-    },
-    {
-      enunciado:
-        "O propósito do PMBOK é identificar e descrever o conhecimento e práticas que devem ser aplicadas uniformemente aos projetos:",
-      alternativas: [
-        "Pequenos.",
-        "Grandes.",
-        "Que possuem o escopo bem definidos.",
-        "A afirmação acima é falsa."
-      ],
-      correta: "C"
-    },
-    {
-      enunciado: "Quem determina os requisitos de um novo projeto?",
-      alternativas: [
-        "O cliente.",
-        "Os stakeholders.",
-        "O gerente do projeto.",
-        "O gerente funcional."
-      ],
-      correta: "A"
-    },
-    {
-      enunciado:
-        "_______________ asseguram que os objetivos do projeto estão sendo atingidos, por meio de monitoração regular do seu progresso para identificar variações do plano e, portanto, ações corretivas podem ser tomadas quando necessárias.",
-      alternativas: [
-        "Controles do projeto.",
-        "Processos de controle.",
-        "Controles de qualidade.",
-        "Garantias da qualidade."
-      ],
-      correta: "B"
-    }
-  ]
-};
+// ===================== SIMULADOS PADRÃO =====================
+const simuladosIniciais = [
+  {
+    materia: "História",
+    topico: "Grécia Antiga",
+    perguntas: [
+      {
+        enunciado: "O período da história grega caracterizado pela formação das Pólis (cidades-estado) e pela expansão colonial é o:",
+        alternativas: ["Período Micênico", "Período Arcaico", "Período Helênico", "Período Homérico"],
+        correta: "B"
+      },
+      {
+        enunciado: "Em Atenas, a 'Eclésia' era a assembleia popular onde os cidadãos votavam as leis. Quem era considerado cidadão?",
+        alternativas: ["Todos os moradores da cidade", "Homens e mulheres nascidos em Atenas", "Homens livres, filhos de pais atenienses e maiores de idade", "Apenas os guerreiros que possuíam terras"],
+        correta: "C"
+      },
+      {
+        enunciado: "A educação espartana era rigidamente voltada para a formação militar. Qual era o nome desse sistema?",
+        alternativas: ["Paidêia", "Ágora", "Agogê", "Ostracismo"],
+        correta: "C"
+      },
+      {
+        enunciado: "As Guerras Médicas foram o conflito entre as cidades gregas e qual império?",
+        alternativas: ["Império Romano", "Império Egípcio", "Império Persa", "Império Cartaginês"],
+        correta: "C"
+      },
+      {
+        enunciado: "Qual filósofo grego foi mestre de Alexandre, o Grande, e fundou o Liceu?",
+        alternativas: ["Sócrates", "Platão", "Aristóteles", "Pitágoras"],
+        correta: "C"
+      }
+    ]
+  },
+  {
+    materia: "Filosofia",
+    topico: "Contratualismo",
+    perguntas: [
+      {
+        enunciado: "Para Thomas Hobbes, o 'Estado de Natureza' é caracterizado como:",
+        alternativas: ["Um período de paz", "Uma guerra de todos contra todos", "Um estágio de evolução espiritual", "Uma organização baseada na cooperação"],
+        correta: "B"
+      },
+      {
+        enunciado: "Qual filósofo afirmou que o homem nasce bom, mas a sociedade o corrompe?",
+        alternativas: ["John Locke", "Immanuel Kant", "Jean-Jacques Rousseau", "Maquiavel"],
+        correta: "C"
+      },
+      {
+        enunciado: "Segundo John Locke, os direitos naturais inalienáveis do ser humano são:",
+        alternativas: ["Vida, liberdade e propriedade privada", "Poder, riqueza e exército", "Educação, saúde e moradia", "Trabalho, lazer e religião"],
+        correta: "A"
+      },
+      {
+        enunciado: "O conceito de 'Leviatã', de Hobbes, refere-se a:",
+        alternativas: ["Um monstro mitológico", "O Estado como um poder absoluto", "A liberdade individual plena", "O sistema democrático moderno"],
+        correta: "B"
+      },
+      {
+        enunciado: "Para Rousseau, a 'Vontade Geral' representa:",
+        alternativas: ["A soma da vontade de todos", "A vontade do rei", "O interesse comum em prol do bem coletivo", "A opinião da maioria absoluta"],
+        correta: "C"
+      }
+    ]
+  },
+  {
+    materia: "Geografia",
+    topico: "Geologia e Relevo",
+    perguntas: [
+      {
+        enunciado: "As camadas internas da Terra, da mais externa para a mais interna, são:",
+        alternativas: ["Manto, Crosta e Núcleo", "Crosta, Núcleo e Manto", "Crosta, Manto e Núcleo", "Núcleo, Manto e Crosta"],
+        correta: "C"
+      },
+      {
+        enunciado: "O movimento das placas tectônicas que ocorre quando elas se afastam é chamado de:",
+        alternativas: ["Convergente", "Divergente", "Transformante", "Estático"],
+        correta: "B"
+      },
+      {
+        enunciado: "Qual dessas formas de relevo é caracterizada por áreas planas e elevadas?",
+        alternativas: ["Planície", "Depressão", "Planalto", "Montanha"],
+        correta: "C"
+      },
+      {
+        enunciado: "O processo de desgaste das rochas pela ação da água, vento e temperatura é o:",
+        alternativas: ["Intemperismo", "Vulcanismo", "Tectonismo", "Sedimentação"],
+        correta: "A"
+      },
+      {
+        enunciado: "A Teoria da Deriva Continental afirma que todos os continentes eram um só bloco chamado:",
+        alternativas: ["Pantalassa", "Eurásia", "Gondwana", "Pangeia"],
+        correta: "D"
+      }
+    ]
+  }
+];
 
-
-// Cria o simulado padrão na primeira execução
+// Cria os simulados padrão na primeira execução
 if (!localStorage.getItem("simulados")) {
-  localStorage.setItem("simulados", JSON.stringify([simuladoPadrao]));
+  localStorage.setItem("simulados", JSON.stringify(simuladosIniciais));
 }
-
-
-
-
