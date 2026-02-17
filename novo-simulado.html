@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Novo Simulado</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>📝 Criar Novo Simulado</h1>
+    <button id="toggleTheme">🌙</button>
+  </header>
+
+  <main>
+    <form id="formSimulado">
+      <label>Matéria:</label>
+      <input type="text" id="materia" required>
+
+      <label>Tópico:</label>
+      <input type="text" id="topico" required>
+
+      <label>Quantidade de perguntas:</label>
+      <input type="number" id="qtdPerguntas" min="1" required>
+
+      <label>Quantidade de alternativas:</label>
+      <div class="radio-group">
+        <label><input type="radio" name="alternativas" value="4" checked> 4 (A-D)</label>
+        <label><input type="radio" name="alternativas" value="5"> 5 (A-E)</label>
+      </div>
+
+      <div id="perguntasContainer"></div>
+
+      <button type="submit" class="salvar">Salvar Simulado</button>
+    </form>
+  </main>
+  <script src="theme.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
