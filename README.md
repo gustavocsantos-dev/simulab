@@ -125,8 +125,21 @@ O objetivo é transformar o SimuLab em uma aplicação moderna utilizando **Reac
 1. Clone o repositório:
 
 ```bash
-git clone https://github.com/gustavocsantos-dev/SimuLab.git
+git clone https://github.com/gustavocsantos-dev/simulab.git
 ```
+
+2. Acesse a pasta do projeto:
+
+```bash
+cd simulab
+```
+
+3. Abra o arquivo principal:
+
+- Localize o arquivo index.html na pasta raiz.
+
+- Dê um duplo clique no arquivo ou arraste-o para dentro do seu navegador de preferência (Chrome, Firefox, Edge, etc.).
+
 ---
  ## 👨🏻‍💻 Contribuições
 
