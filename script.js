@@ -1,3 +1,18 @@
+//=================== NAVBAR ===================
+const menuToggle = document.getElementById("menuToggle");
+const navLinks = document.getElementById("navLinks");
+
+if (menuToggle && navLinks) {
+  menuToggle.addEventListener("click", () => {
+    navLinks.classList.toggle("active");
+
+    // Troca ícone
+    menuToggle.textContent =
+      navLinks.classList.contains("active") ? "✕" : "☰";
+  });
+}
+
+
 // ===================== INDEX =====================
 if (document.getElementById("novoSimuladoBtn")) {
   const container = document.getElementById("simuladosContainer");
